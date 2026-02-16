@@ -1,0 +1,130 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalized Learning Partner</title>
+    <link rel="stylesheet" href="/my-simple-app/src/index.css" />
+  </head>
+  <body>
+    <!-- Static Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img class="IMAGE-logo" src="image.jpg" alt="logo" />
+          <a href="#">Personalized Learning Partner</a>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <a href="#login" class="btn btn-light">Login</a>
+          <a href="#signup" class="btn btn-primary">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Static Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Empower Your Learning, Ace Your Tests!</h1>
+        <p>
+          Unlock your potential with personalized tools designed for engineering
+          students. Learn better, faster, and smarter with AI-powered solutions.
+        </p>
+        <div class="hero-buttons">
+          <a href="#get-started" class="btn btn-primary">Get Started</a>
+          <a href="#features" class="btn btn-secondary">Explore Features</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Static Features Section -->
+    <section class="features" id="features">
+      <h2>Our Features</h2>
+      <div class="feature-cards">
+        <div class="feature-card" onclick="questionAnswering()">
+          <h3>Question Answering</h3>
+          <p>Ask your doubts and get precise answers instantly.</p>
+        </div>
+        <div class="feature-card" onclick="summarizer()">
+          <h3>Summarizer</h3>
+          <p>Condense complex topics into simple, digestible summaries.</p>
+        </div>
+        <div class="feature-card" onclick="gptIntegration()">
+          <h3>GPT Integration</h3>
+          <p>
+            Leverage AI for detailed explanations and personalized guidance.
+          </p>
+        </div>
+        <div class="feature-card" onclick="diagramLearning()">
+          <h3>Diagrammatic Learning</h3>
+          <p>Understand concepts visually with interactive diagrams.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Static Diagram Section -->
+    <section class="diagram-section">
+      <h2>Diagrammatic Learning</h2>
+      <p>
+        Draw and validate your diagrams to enhance your visual learning skills.
+      </p>
+      <div class="diagram-container">
+        <canvas id="diagramCanvas" width="600" height="400"></canvas>
+        <div class="controls">
+          <button id="clearCanvas" class="btn btn-secondary">
+            Clear Canvas
+          </button>
+          <button id="validateDiagram" class="btn btn-primary">
+            Validate Diagram
+          </button>
+        </div>
+      </div>
+      <p id="validationResult"></p>
+    </section>
+
+    <!-- Static Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <h2>What Our Students Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <p>
+            "The personalized learning partner has completely changed the way I
+            study. The AI-powered tools are incredibly helpful for clearing my
+            doubts!"
+          </p>
+          <h3>-Mohan</h3>
+          <span>Engineering Student</span>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            "Diagrammatic learning has made it so much easier to understand
+            complex topics. The interactive tools are fantastic!"
+          </p>
+          <h3>- Hari krishna</h3>
+          <span>Computer Science Student</span>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            "The summarizer and GPT integration are life-savers during exams.
+            Highly recommend this platform to all engineering students."
+          </p>
+          <h3>- Gokul</h3>
+          <span>Mechanical Engineering Student</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- React will render the DemoContainer here -->
+    <div id="demo-root"></div>
+
+    <!-- Static Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
